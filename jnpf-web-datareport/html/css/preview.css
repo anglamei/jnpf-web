@@ -1,0 +1,170 @@
+body {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background-color: #ebeef5;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 147, 153, .3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 5px solid transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+  min-height: 20px;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#app::-webkit-scrollbar {
+  width: 0;
+}
+
+/*弹窗*/
+.data-report-modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 50%;
+  overflow: visible;
+  bottom: inherit;
+  right: inherit;
+}
+
+.data-report-modal .modal-dialog .modal-content {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.data-report-modal .modal-dialog .modal-header {
+  padding: 0 20px;
+  height: 56px;
+  line-height: 56px;
+  border-bottom: 1px solid #e8eaec;
+}
+
+.data-report-modal .modal-dialog .modal-header .close {
+  margin-top: 16px;
+  opacity: 1;
+}
+
+.data-report-modal .modal-dialog .modal-header .close i {
+  font-weight: normal;
+  font-size: 18px;
+  color: #909399;
+  line-height: normal;
+
+}
+
+.data-report-modal .modal-dialog .modal-header .close:hover i {
+  color: #1890ff;
+}
+
+.data-report-modal .modal-dialog .modal-header .modal-title {
+  height: 56px;
+  line-height: 56px;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  background-color: #fff;
+}
+
+.header .tools {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+
+.header .tools a {
+  color: #333;
+  text-decoration: none;
+}
+
+.header .tools .pageNum {
+  color: #333;
+  font-size: 14px;
+}
+
+.header .tools .tool-icon {
+  display: inline-block;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.header .tools .tool-icon img {
+  width: 28px;
+  height: 28px;
+}
+
+/* .header .pageLinkContainer .tool-icon {
+  width: 25px;
+  height: 25px;
+  color: #000;
+} */
+
+.header .pageLinkContainer em {
+  font-style: normal;
+  font-size: 14px;
+}
+
+.options {
+  position: absolute;
+  right: 20px;
+  height: 60px;
+  width: 70px;
+  text-align: right;
+}
+
+.preview-bd {
+  padding: 20px;
+  background-color: #ebeef5;
+  height: calc(100vh - 60px);
+  text-align: center;
+  overflow: auto;
+}
+
+.preview-bd ._ureport_table {
+  padding: 20px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #dfe6ec;
+  min-width: 300px;
+  min-height: calc(100vh - 120px);
+}
+
+.pdfclose {
+  font-weight: 200;
+  color: #909399;
+}
+
+.pdfclose:hover {
+  color: #1890ff;
+}

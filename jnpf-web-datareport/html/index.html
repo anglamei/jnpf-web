@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>JNPF数据报表</title>
+  <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="./css/ele.css" rel="stylesheet" type="text/css" />
+  <link href="./css/handsontable.min.css" rel="stylesheet" type="text/css" />
+  <link href="./css/toastr.min.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="./venderjs/jquery.min.js"></script>
+  <script type="text/javascript" src="./venderjs/jquery.contextMenu.min.js"></script>
+  <script type="text/javascript" src="./venderjs/completer.min.js"></script>
+  <script type="text/javascript" src="./venderjs/bootstrap-colorpicker.min.js"></script>
+  <script type="text/javascript" src="./js/common.bundle.js"></script>
+  <script type="text/javascript" src="./js/toastr.min.js"></script>
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <div id='container'></div>
+  <script type="text/javascript">
+    // 报表接口
+    window._server = "http://localhost:9000";
+    // 报表前端
+    window._contextPath = "http://localhost:8200";
+    // 主项目接口地址
+    window._mainServer = "http://127.0.0.1:7772";
+  </script>
+  <script type="text/javascript" src="./js/designer.bundle.js"></script>
+</body>
+
+</html>

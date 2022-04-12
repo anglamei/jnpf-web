@@ -1,0 +1,234 @@
+body,
+html,
+#app {
+  height: 100%;
+}
+
+input,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.JNPF-flex-main {
+  display: flex;
+  flex-direction: column;
+
+  .el-table {
+    flex: 1;
+
+    &::before {
+      border-bottom: 0;
+      height: 0px
+    }
+
+    .el-button--mini.el-button--text {
+      padding: 3px 0;
+    }
+  }
+
+  .el-table__fixed::before,
+  .el-table__fixed-right::before {
+    border-bottom: 0;
+    height: 0px
+  }
+}
+
+.JNPF-common-layout {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.JNPF-common-layout-center {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  .JNPF-common-layout-main {
+    flex: 1;
+    padding: 0 0 10px;
+    background-color: #fff;
+    height: 100%;
+    overflow: hidden;
+
+    .el-table {
+      color: #606266;
+      font-size: 12px;
+    }
+
+    .el-table th {
+      background-color: #f5f7fa !important;
+    }
+
+    .el-table th>.cell {
+      font-size: 12px;
+      color: #909399;
+      font-weight: normal;
+    }
+
+    .el-table--small td,
+    .el-table--small th {
+      padding: 8px 0;
+    }
+
+    &.nohead {
+      padding-top: 10px;
+
+    }
+
+    .el-pagination {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .JNPF-table-delBtn {
+      color: #ff3a3a !important;
+
+      &.el-button--text:hover,
+      &.el-button--text:focus {
+        color: #ff3a3a !important;
+      }
+
+      &.is-disabled {
+        color: #C0C4CC !important;
+
+        &.el-button--text:hover,
+        &.el-button--text:focus {
+          color: #C0C4CC !important;
+        }
+      }
+    }
+  }
+}
+
+.JNPF-common-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 10px;
+  flex-shrink: 0;
+
+  .JNPF-common-head-right {
+    flex-shrink: 0;
+    font-size: 0;
+
+    .el-link {
+      margin-left: 12px;
+    }
+
+    .JNPF-common-head-icon {
+      color: #606266;
+    }
+  }
+}
+
+.JNPF-common-search-box {
+  background: #fff;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+  padding: 15px 10px 0;
+  position: relative;
+  margin-bottom: 10px;
+
+  .keyword {
+    padding-left: 10px;
+  }
+
+  .el-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+.JNPF-dialog {
+  &.JNPF-dialog_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .el-dialog {
+      border-radius: 4px;
+      margin-top: 0 !important;
+
+      .el-dialog__header {
+        border-bottom: 1px solid #dcdfe6;
+        padding: 0 20px;
+        height: 56px;
+        line-height: 56px;
+
+        .el-dialog__headerbtn {
+          top: 16px;
+          right: 16px;
+        }
+      }
+
+      .el-dialog__body {
+        overflow: hidden auto;
+        max-height: 70vh;
+        padding: 20px 50px 2px 20px;
+      }
+
+      .el-dialog__close {
+        font-size: 24px;
+      }
+    }
+
+    &.transfer-dialog {
+      .el-dialog .el-dialog__body {
+        padding: 10px;
+      }
+    }
+  }
+
+  &.enlarge-dialog .el-dialog .el-dialog__header {
+    border-bottom: none;
+  }
+
+  .el-select {
+    width: 100%;
+  }
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(144, 147, 153, .3);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  border: 5px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  min-height: 20px;
+  background-clip: content-box;
+
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#app::-webkit-scrollbar {
+  width: 0;
+}

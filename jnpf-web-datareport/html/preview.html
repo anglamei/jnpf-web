@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>预览报表-JNPF数据报表</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link href="./css/ele.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+	<link href="./css/preview.css" rel="stylesheet" type="text/css" />
+	<link href="./css/toastr.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="./venderjs/jquery.min.js"></script>
+	<script type="text/javascript" src="./venderjs/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./venderjs/Chart.bundle.min.js"></script>
+	<script type="text/javascript" src="./venderjs/chartjs-plugin-datalabels.min.js"></script>
+	<script type="text/javascript" src="./venderjs/bootstrap-datetimepicker.js"></script>
+	<script type="text/javascript" src="./js/preview.bundle.js"></script>
+	<script type="text/javascript" src="./js/toastr.min.js"></script>
+	<link rel="icon" href="favicon.ico">
+	<style type="text/css" id="_ureport_table_style"></style>
+</head>
+
+<body>
+	<div class="preview-box">
+		<div class="header">
+			<div class="tools">
+				<span id='pageLinkContainer' class="pageLinkContainer">
+					<a href="javascript:;" class="tool-icon pageIndex" title="第一页">
+						<img src='./icons/pageIndex.svg' alt="第一页" />
+					</a>
+					<a href="javascript:;" class="tool-icon pagePre" title="上一页">
+						<img src='./icons/pagePre.svg' alt="上一页" />
+					</a>
+					<em class="pageNum">1/1</em>
+					<a href="javascript:;" class="tool-icon pageNext" title="下一页">
+						<img src='./icons/pageNext.svg' alt="下一页" />
+					</a>
+					<a href="javascript:;" class="tool-icon pageLast" title="最后一页">
+						<img src='./icons/pageLast.svg' alt="最后一页" />
+					</a>
+				</span>
+				<a href="javascript:;" class="tool-icon ureport-refresh" title="刷新">
+					<img src='./icons/refresh.svg' alt="刷新" /> 刷新
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-print" title="在线打印">
+					<img src='./icons/print.svg' alt="在线打印" />
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-pdf-direct-print" title="PDF在线打印">
+					<img src='./icons/printPdf.svg' alt="PDF在线打印" />
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-pdf-print" title="PDF在线预览打印">
+					<img src='./icons/printPreview.svg' alt="PDF在线预览打印" />
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-export-pdf" title="导出PDF">
+					<img src='./icons/pdf.svg' alt="导出PDF" />
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-export-word" title="导出WORD">
+					<img src='./icons/word.svg' alt="导出WORD" />
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-export-excel" title="导出EXCEL">
+					<img src='./icons/excel.svg' alt="导出EXCEL" />
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-export-excel-paging" title="分页导出EXCEL">
+					<img src='./icons/excel-paging.svg' alt="分页导出EXCEL" />
+				</a>
+				<a href="javascript:;" class="tool-icon ureport-export-excel-paging-sheet" title="分页分Sheet导出EXCEL">
+					<img src='./icons/excel-with-paging-sheet.svg' alt="分页分Sheet导出EXCEL" />
+				</a>
+			</div>
+			<div class="options">
+				<button class="el-button el-button--default el-button--small preview-btn" style="display: none;">关闭</button>
+			</div>
+		</div>
+		<div class="preview-bd">
+			<div class="_ureport_table" id="_ureport_table" style="display: none;"></div>
+		</div>
+		<iframe name="_print_frame" width="0" height="0" frameborder="0" src="about:blank"></iframe>
+		<iframe name="_print_pdf_frame" id="_print_pdf_frame" width="0" height="0" frameborder="0"
+			src="about:blank"></iframe>
+	</div>
+	<script type="text/javascript">
+		// 报表接口
+		window._server = "http://localhost:9000";
+		window.formElements = [];
+	</script>
+
+</body>
+
+</html>

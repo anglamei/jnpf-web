@@ -1,0 +1,395 @@
+body {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    background-color: #ebeef5;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(144, 147, 153, .3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    border: 5px solid transparent;
+}
+
+
+::-webkit-scrollbar-thumb {
+    min-height: 20px;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#app::-webkit-scrollbar {
+    width: 0;
+}
+
+input,
+button,
+a {
+    outline: 0 none !important;
+}
+
+.form-control {
+    box-shadow: none !important;
+    border: 1px solid #DCDFE6;
+}
+
+.custom-formitm {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.custom-formitm .lab {
+    float: left;
+    width: 76px;
+    margin-right: -76px;
+    text-align: right;
+    font-weight: normal;
+}
+
+.custom-formitm .ipt {
+    margin-left: 80px;
+}
+
+.custom-formitm-l {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.custom-formitm-l .lab {
+    float: left;
+    width: 100px;
+    margin-right: -100px;
+    text-align: right;
+    font-weight: normal;
+}
+
+.custom-formitm-l .ipt {
+    margin-left: 110px;
+}
+
+.top-toolbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #dfe6ec;
+    padding: 0 20px;
+}
+
+.top-toolbar .logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.top-toolbar .logo span {
+    display: inline-block;
+    line-height: 60px;
+    font-size: 18px;
+    color: #333;
+}
+
+.top-toolbar .top-tools {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-toolbar .top-tools .tool-item {
+    display: inline;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.top-toolbar .options {
+    width: 200px;
+    text-align: right;
+}
+
+.top-right-btns {
+    display: none;
+}
+
+.main-wrap {
+    margin: 5px 0 0 5px;
+    margin-right: 400px;
+    height: calc(100vh - 66px);
+    overflow: scroll;
+}
+
+.handsontable table.htCore {
+    border-collapse: collapse
+}
+
+.ud-toolbar {
+    width: 100%;
+}
+
+.ud-property-panel {
+    position: absolute;
+    width: 400px;
+    height: calc(100vh - 60px);
+    border-left: solid 1px #ddd;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    z-index: 105;
+    background: #ffffff;
+}
+
+.ud-select-color {
+    background: #000000;
+    width: 14px;
+    height: 2px;
+    display: block;
+    margin: -5px 0 0 5px;
+}
+
+.ud-select-bgcolor {
+    background: #fff;
+    width: 14px;
+    height: 2px;
+    display: block;
+    margin: -5px 0 0 3px;
+}
+
+.nav-tabs {
+    display: flex;
+    text-align: center;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    border: none;
+    background: none;
+    color: #1890ff;
+    border-bottom: 2px solid #1890ff;
+}
+
+.nav-tabs>li {
+    float: none;
+    color: #303133;
+    width: 50%;
+}
+
+.nav-tabs>li>a {
+    border: none;
+    border-radius: 0;
+    color: #303133;
+}
+
+.nav-tabs>li>a:hover {
+    border: none;
+    background-color: #fff;
+    color: #1890ff;
+}
+
+.tab-pane .ud-toolbar {
+    margin-top: 6px;
+    padding-left: 6px;
+}
+
+/*数据源面板*/
+.datasource-pannel .btns {
+    padding: 10px;
+}
+
+.datasource-pannel i.ureport {
+    margin-right: 6px;
+    font-size: 12px;
+}
+
+.datasource-pannel-tree {
+    height: calc(100vh - 160px);
+    overflow: hidden auto;
+}
+
+/*弹窗*/
+.data-report-modal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 50%;
+    overflow: visible;
+    bottom: inherit;
+    right: inherit;
+}
+
+.modal-dialog {
+    width: 600px;
+}
+
+.modal-dialog .modal-content {
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .3);
+}
+
+.modal-dialog .modal-header {
+    padding: 0 20px;
+    height: 56px;
+    line-height: 56px;
+    border-bottom: 1px solid #e8eaec;
+}
+
+.modal-dialog .modal-header .close {
+    margin-top: 16px;
+    opacity: 1;
+}
+
+.modal-dialog .modal-header .close i {
+    font-weight: normal;
+    font-size: 18px;
+    color: #909399;
+    line-height: normal;
+
+}
+
+.modal-dialog .modal-header .close:hover i {
+    color: #1890ff;
+}
+
+.modal-dialog .modal-header .modal-title {
+    height: 56px;
+    line-height: 56px;
+}
+
+.modal-dialog .modal-body {
+    padding: 20px 50px;
+    min-height: 200px;
+}
+
+.modal-dialog .modal-body .data-formitm {
+    padding: 20px 0 0;
+    line-height: 30px;
+}
+
+.modal-dialog .modal-body .data-formitm .lab {
+    float: left;
+    width: 90px;
+    margin-right: -90px;
+    text-align: right;
+    font-weight: normal;
+}
+
+.modal-dialog .modal-body .data-formitm .ipt {
+    margin-left: 100px;
+}
+
+.modal-dialog .modal-body .data-formitm .ipt * {
+    vertical-align: middle;
+}
+
+.modal-dialog .modal-body .row {
+    padding-bottom: 10px;
+}
+
+.modal-dialog .modal-footer {
+    border-top: 0;
+    padding: 10px 20px 20px;
+}
+
+.dropdown-menu {
+    padding: 10px 0;
+    border: 1px solid #ebeef5;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.sql-dialog-sider {
+    width: 260px;
+    display: inline-block;
+    vertical-align: top;
+    height: 450px;
+    overflow: hidden auto;
+}
+
+.sq-search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.sq-search-bar .el-input__inner {
+    display: inline-block;
+    width: 188px;
+}
+
+.sql-dialog-sider .table {
+    font-size: 12px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.sql-dialog-main {
+    display: inline-block;
+    width: 580px;
+    margin-left: 10px;
+    height: 450px;
+    overflow: hidden auto;
+}
+
+/*table*/
+.el-table th,
+.el-table td {
+    padding: 8px;
+}
+
+.el-table th {
+    font-weight: normal;
+    font-size: 14px;
+    background-color: #f5f7fa;
+}
+
+.el-table {
+    table-layout: fixed;
+}
+
+.el-table {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.editTxt,
+.editTxt:hover {
+    color: #409eff;
+    text-decoration: none;
+}
+
+.delTxt,
+.delTxt:hover {
+    color: #f56c6c;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.el-input--small .report-icon {
+    font-size: 14px;
+}
+
+.el-button--mini .report-icon {
+    font-size: 14px;
+}
