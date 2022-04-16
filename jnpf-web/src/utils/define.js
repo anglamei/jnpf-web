@@ -1,5 +1,5 @@
 // 开发环境接口配置
-const APIURl = 'http://192.168.0.18:7004'
+const APIURl = 'http://127.0.0.1:30000'
 
 module.exports = {
   APIURl: APIURl,

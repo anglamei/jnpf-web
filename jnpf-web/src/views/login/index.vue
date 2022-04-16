@@ -4,9 +4,9 @@
       <p class="login-version-text">{{$t('login.version')}} {{define.version}}</p>
     </div>
     <div class="login-content">
-      <img class="login-img" src="../../assets/images/login_content_img.png" alt="">
+      <img class="login-img" src="../../assets/images/login_content_img.jpg" alt="">
       <div class="login-form">
-        <img class="login-logo" src="../../assets/images/login_logo.png" alt="">
+        <img class="login-logo" src="../../assets/images/login_logo.jpg" alt="">
         <div class="login-tab">
           <a class="item" :class="{'active': active==1}" @click="active=1">{{$t('login.title')}}</a>
           <a class="item" :class="{'active': active==2}"
